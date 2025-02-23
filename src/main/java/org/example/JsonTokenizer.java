@@ -3,7 +3,7 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JsonParser {
+public class JsonTokenizer {
     public static List<Token> tokenize(String jsonStr){
         int index = 0;
         List<Token> tokenList = new ArrayList<>();

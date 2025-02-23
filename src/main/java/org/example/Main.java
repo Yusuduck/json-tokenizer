@@ -7,12 +7,16 @@ public class Main {
     private static String simpleJsonStr = """
             {
             "name" : "Bob", 
-            "age" : 23
+            "age" : 23,
+                "country" : {
+                    "id" : 1,
+                    "name" : "France"
+                }
             }
             """;
     public static void main(String[] args) {
         System.out.println("Start tokenize");
-        List<Token> tokenList = JsonParser.tokenize(simpleJsonStr);
+        List<Token> tokenList = JsonTokenizer.tokenize(simpleJsonStr);
         System.out.println("end of program");
     }
 }
